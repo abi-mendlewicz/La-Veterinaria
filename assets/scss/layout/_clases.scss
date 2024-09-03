@@ -1,0 +1,54 @@
+/* Fondos */
+$fondos-path: "../../assets/images/fondos/";
+
+.bg-footprints {
+  background-image: url($fondos-path + "footprints.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Filtros */
+.lv-filter-grayscale {
+  filter: grayscale(1);
+}
+
+/* Listas */
+.list-group {
+  a.list-group-item {
+    background-color: transparent;
+    color: $blue;
+  }
+}
+  
+@include media-breakpoint-up(lg) {
+  /* Bordes */
+  .lv-border-rounded-top-right {
+    @include border-top-end-radius(50%);
+  }
+
+  .lv-border-rounded-bottom-left {
+    @include border-bottom-start-radius(50%);
+  }
+}
+
+@media (orientation: portrait) {
+  /* Imágenes */
+  .lv-img-portrait {
+  display: block !important;
+  }
+
+  .lv-img-landscape {
+    display: none !important;
+  }
+}
+
+@media (orientation: landscape) {
+  /* Imágenes */
+  .lv-img-landscape {
+    display: block !important;
+  }
+
+  .lv-img-portrait {
+    display: none !important;
+  }
+}

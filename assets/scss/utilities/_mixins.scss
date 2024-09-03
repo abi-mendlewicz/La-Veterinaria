@@ -1,0 +1,9 @@
+@mixin bg-semitransparent($color, $alpha) {
+  background-color: rgba($color, $alpha)
+}
+
+@mixin setup-balloon($attrs) {
+  @each $property, $value in $attrs {
+    #{$property}: #{$value};
+  }
+}

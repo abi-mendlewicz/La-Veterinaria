@@ -1,0 +1,19 @@
+header {
+  height: 4rem;
+  nav {
+    height: 100%;
+    a {
+      font-family: map-get($lv_fonts, link);
+      font-weight: 200;
+      &:hover {
+        color: $yellow !important;
+      }
+    }
+
+    svg {
+      &:hover {
+        fill: $yellow;
+      }
+    }
+  }
+}
