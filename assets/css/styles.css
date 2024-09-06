@@ -12003,6 +12003,9 @@ main {
   min-height: 100vh;
 }
 
+footer p a:hover {
+  color: #ffb74d !important;
+}
 footer nav a svg {
   transition: 1.5s;
 }

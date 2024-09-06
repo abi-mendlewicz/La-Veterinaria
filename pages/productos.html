@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre nuestra selección de productos para mascotas en La Veterinaria. Ofrecemos alimentos de alta calidad, medicamentos veterinarios y accesorios esenciales para el bienestar de tus animales. Encuentra todo lo que necesitas para cuidar de tus compañeros en un solo lugar.">
+  <meta name="keywords" content="productos para mascotas, alimentos para animales, medicamentos veterinarios, accesorios para mascotas, tienda para animales, productos veterinarios, salud animal, cuidado de mascotas, artículos para animales, La Veterinaria">
+  <meta name="author" content="@abi_mendlewicz">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <!-- hojas de estilo -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <!-- título de página -->
+  <title>Productos para Mascotas - Alimentos, Medicamentos y Accesorios | La Veterinaria</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg px-3 px-lg-5 bg-primary">
+      <div class="container-fluid p-0">
+        <!-- logo con enlace a página de inicio -->
+        <a class="navbar-brand" href="../index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="lv-tooltip" data-bs-title="Inicio">
+          <img src="../assets/images/logo.webp" alt="Logo" class="img-fluid">
+        </a>
+        <!-- fin logo con enlace a página de inicio -->
+        <!-- botón para desplegar menú en offcanvas para pantallas menores a 992px -->
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Menú desplegable">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
+        <!-- fin botón para desplegar menú en offcanvas para pantallas menores a 992px -->
+        <!-- offcanvas con menú principal para pantallas menores a 992px -->
+        <div class="offcanvas offcanvas-end justify-content-end bg-primary" id="navMain">
+          <!-- botón de cierre de offcanvas -->
+          <div class="offcanvas-header justify-content-end">
+            <button type="button" class="btn bg-transparent text-white" data-bs-dismiss="offcanvas" aria-label="Cerrar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+              </svg>
+            </button>
+          </div>
+          <!-- fin botón de cierre de offcanvas -->
+          <!-- menú de navegación principal -->
+          <div class="navbar-nav offcanvas-body justify-content-lg-end">
+            <a class="nav-link text-center text-white" href="./servicios.html">Servicios</a>
+            <a class="nav-link text-center text-warning fw-bold" href="./productos.html">Productos</a>
+            <a class="nav-link text-center text-white" href="./quienes-somos.html">Quiénes somos</a>
+            <a class="nav-link text-center text-white" href="./contacto.html">Contacto</a>
+            <div data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="lv-tooltip" data-bs-title="Carrito">
+              <button type="button" class="nav-link d-flex justify-content-center align-items-center text-white mx-auto my-1 position-relative" data-bs-toggle="modal" data-bs-target="#carrito-modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16" role="img" aria-label="Carrito">
+                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                </svg>
+                <span class="position-absolute top-25 start-100 translate-middle badge rounded-pill border border-warning">
+                  0
+                  <span class="visually-hidden">Productos en el carrito de compras.</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!-- menú de navegación principal -->
+        </div>
+        <!-- fin offcanvas con menú principal para pantallas menores a 992px -->
+      </div>
+    </nav>
+  </header>
+  <main class="my-5 mx-3 mx-lg-5">
+    <!-- títulos de página -->
+    <h1>Los mejores productos al mejor precio</h1>
+    <!-- fin títulos de página -->
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Productos</li>
+      </ol>
+    </nav>
+    <!-- fin breadcrumb -->
+    <!-- filtros de producto -->
+    <div class="row g-3 mt-3">
+      <div class="col-6 col-md-3 col-lg-2 mt-0 py-3">
+        <button type="button" class="btn btn-outline-primary w-100 active" data-bs-toggle="modal" data-bs-target="#alert-no-function">Todo</button>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 mt-0 py-3">
+        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#alert-no-function">Perro</button>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 mt-0 py-3">
+        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#alert-no-function">Gato</button>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 mt-0 py-3">
+        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#alert-no-function">Otros </button>
+      </div>
+    </div>
+    <!-- fin filtros de producto -->
+    <!-- catálogo de productos -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/comida-perro.webp" alt="Comida para perros." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/comida-perro-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Comida para perros</h3>
+            <p class="card-text">$1.500</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/comida-gato.webp" alt="Comida para gatos." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/comida-gato-2.webp" alt="Comida para gatos." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-warning">AGOTADO</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Comida para gatos</h3>
+            <p class="card-text">$1.500</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/kit-pecera.webp" alt="Comida para perros." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/kit-pecera-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-success">OFERTA</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kit para peceras</h3>
+            <p class="card-text m-0 text-decoration-line-through">$2.750</p>
+            <p class="card-text text-success">PRECIO OFERTA $2.200</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/shampoo-perro.webp" alt="Shampoo acondicionador." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/shampoo-perro-2.webp" alt="Shampoo acondicionador." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-warning">AGOTADO</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Shampoo acondicionador</h3>
+            <p class="card-text">$350</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/bano-gato.webp" alt="Baño para gatos." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/bano-gato-2.webp" alt="Baño para gatos." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-success">OFERTA</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Baño para gatos</h3>
+            <p class="card-text m-0 text-decoration-line-through">$1.750</p>
+            <p class="card-text text-success">PRECIO OFERTA $1.200</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/juguete-perro.webp" alt="Juguetes para perros." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/juguete-perro-2.webp" alt="Juguetes para perros." class="card-img-2nd rounded-5">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Juguete de peluche</h3>
+            <p class="card-text">$300</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/kit-bandeja-gato.webp" alt="Kit bandeja y platitos." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/kit-bandeja-gato-2.webp" alt="Kit bandeja y platitos." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-success">OFERTA</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kit bandeja y accesorios</h3>
+            <p class="card-text m-0 text-decoration-line-through">750</p>
+            <p class="card-text text-success">PRECIO OFERTA $650</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/pulguicida.webp" alt="Collar antipulgas en caja." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/pulguicida-2.webp" alt="Collar antipulgas en caja." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-warning">AGOTADO</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Collar antipulgas</h3>
+            <p class="card-text">$720</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/sofa.webp" alt="Cama sofá acolchonado." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/sofa-2.webp" alt="Cama sofá acolchonado." class="card-img-2nd rounded-5">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Cama sofá acolchonado</h3>
+            <p class="card-text">$3.500</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- fin catálogo de productos -->
+    <!-- paginación de productos -->    
+    <div class="row">
+      <div class="col my-5 d-flex justify-content-center">
+        <button type="button" class="btn btn-lg btn-outline-primary d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#spinner" aria-expanded="false" aria-controls="collapseWidthExample">
+          <span>Cargar más productos</span>
+          <div class="spinner-border collapse collapse-horizontal ms-2" id="spinner" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <!-- fin paginación de productos -->
+    <!-- popup cupón de descuento -->
+    <div id="discount-coupon-popup" class="popup" tabindex="-1">
+      <div class="popup-balloons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon1 bi bi-balloon-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224zM4.352 3.356a4 4 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5s-.226.496-.498.542c-.95.162-1.749.78-2.173 1.617a.6.6 0 0 1-.52.341c-.346 0-.599-.329-.457-.644"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon2 bi bi-balloon-heart" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon3 bi bi-balloon-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224zM4.352 3.356a4 4 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5s-.226.496-.498.542c-.95.162-1.749.78-2.173 1.617a.6.6 0 0 1-.52.341c-.346 0-.599-.329-.457-.644"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon4 bi bi-balloon-heart" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon5 bi bi-balloon-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224zM4.352 3.356a4 4 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5s-.226.496-.498.542c-.95.162-1.749.78-2.173 1.617a.6.6 0 0 1-.52.341c-.346 0-.599-.329-.457-.644"/>
+        </svg>
+      </div>
+      <div class="popup-dialog">
+        <div class="popup-content">
+          <div class="popup-header">
+            <h2>15% OFF <small>en tu primera compra</small></h2>
+          </div>
+          <div class="popup-body">
+            <p class="mb-0">Agregando el cupón <strong>#AmoAMiMascota</strong></p>
+            <p class="mb-0">Disfruta de nuestros descuentos mientras tu mascota disfruta de nuestros productos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin popup cupón de descuento -->
+    <!-- modal carrito -->
+    <div class="modal fade" id="carrito-modal" tabindex="-1" aria-labelledby="carrito-modal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon me-2" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
+                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+              </svg>
+              ATENCIÓN
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Tu carrito está vacío.</p>
+            <p class="mb-0">Añade productos desde nuestra tienda.</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-sm btn-outline-warning text-primary" data-bs-dismiss="modal">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin modal carrito -->
+    <!-- modal alerta de funciones no desarrolladas -->
+    <div class="modal fade" id="alert-no-function" tabindex="-1" aria-labelledby="alert-no-function" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon me-2" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
+                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+              </svg>
+              ATENCIÓN
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Esta función no está disponible aún. Lo sentimos.</p>
+            <p class="mb-0">Por favor, vuelve a intentarlo en su próxima visita!</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-sm btn-outline-warning text-primary" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin modal alerta de funciones no desarrolladas -->
+  </main>
+  <footer>
+    <div class="row m-0 py-2 py-sm-3 px-3 px-lg-5 bg-primary">
+      <div class="col-7 col-sm-9 p-0 py-lg-3">
+        <!-- enlace al mapa del sitio -->
+        <p class="m-0"><a class="small text-white" href="../sitemap.html">Mapa del sitio</a></p>
+        <!-- fin enlace al mapa del sitio -->
+        <!-- copyright -->
+        <p class="m-0 small text-white">&copy 2024 <strong>La Veterinaria</strong>. Todos los derechos reservados.</p>
+        <!-- fin copyright -->
+      </div>
+      <!-- menú enlaces a redes sociales -->
+      <nav class="nav col-5 col-sm-3 pe-3 pb-3 pb-sm-2 pb-lg-4 justify-content-end align-items-end align-content-lg-end align-items-lg-center">
+        <a class="icon-link text-white" href="https://www.facebook.com/" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="lv-tooltip" data-bs-title="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" role="img" aria-label="Facebook">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg>
+        </a>
+        <a class="icon-link mx-3 text-white" text-white href="https://www.instagram.com/" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="lv-tooltip" data-bs-title="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" role="img" aria-label="Instagram">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg>
+        </a>
+        <a class="icon-link position-fixed bottom-0 end-0 p-3 me-lg-4 mb-2 mb-lg-4 bg-primary rounded-circle text-white" href="https://api.whatsapp.com/" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="lv-tooltip" data-bs-title="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" role="img" aria-label="Whatsapp">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg>
+        </a>
+      </nav>
+      <!-- fin menú enlaces a redes sociales -->
+    </div>
+  </footer>
+  <!-- cargar scripts de bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- habilitar complementos de bootstrap -->
+  <script type="text/javascript">
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+</html>

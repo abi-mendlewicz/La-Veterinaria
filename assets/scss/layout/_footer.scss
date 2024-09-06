@@ -1,4 +1,12 @@
 footer {
+  p {
+    a {
+      &:hover {
+        color: $yellow !important;
+      }
+    }
+  }
+
   nav {
     a {
       svg {
