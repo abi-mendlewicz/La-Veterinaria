@@ -1,0 +1,31 @@
+@function footprint-top($i) {
+  $top: 10em;
+  @if $i {
+    @return $top + ($i * 3em);
+  }
+
+  @return $top;
+}
+
+@function footprint-right($i) {
+  @if $i % 2 == 0 {
+    @return 3em + $i * 2;
+  }
+
+  @return 0em + $i * 2;
+}
+
+@for $i from 0 through 17 {
+  #lv-footprint-#{$i} {
+    position: absolute;
+    @include setup-footprints(
+      $attrs: (
+        "top": footprint-top($i),
+        "right": footprint-right($i)
+      )
+    );
+    opacity: 0;
+    transform: rotate(230deg);
+    animation: walk 2s ease-in-out #{$i * 0.5s} 1 normal forwards;
+  }
+}

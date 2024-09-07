@@ -65,3 +65,18 @@
     transform: translateY(-150vh);
   }
 }
+
+@keyframes walk {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}

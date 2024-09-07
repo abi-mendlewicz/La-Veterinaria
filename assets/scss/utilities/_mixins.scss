@@ -7,3 +7,9 @@
     #{$property}: #{$value};
   }
 }
+
+@mixin setup-footprints($attrs) {
+  @each $property, $value in $attrs {
+    #{$property}: #{$value};
+  }
+}
