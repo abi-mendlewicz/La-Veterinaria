@@ -11951,13 +11951,6 @@ body nav ul li {
   display: inline-block;
 }
 
-/* Fondos */
-.bg-footprints {
-  background-image: url("../../assets/images/fondos/footprints.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* Filtros */
 .lv-filter-grayscale {
   filter: grayscale(1);
@@ -12290,6 +12283,22 @@ footer nav a svg:hover {
   opacity: 0;
   transform: rotate(230deg);
   animation: walk 2s ease-in-out 8.5s 1 normal forwards;
+}
+
+.lv-404 {
+  background-image: linear-gradient(#003366, white);
+}
+.lv-404 header {
+  height: 4em;
+}
+.lv-404 main {
+  height: calc(100vh - 4em);
+  min-height: unset;
+  background: url("../../assets/images/fondos/bg-404.webp") no-repeat center fixed;
+  background-size: cover;
+}
+.lv-404 main section {
+  height: 100%;
 }
 
 .popup {

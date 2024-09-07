@@ -1,12 +1,3 @@
-/* Fondos */
-$fondos-path: "../../assets/images/fondos/";
-
-.bg-footprints {
-  background-image: url($fondos-path + "footprints.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* Filtros */
 .lv-filter-grayscale {
   filter: grayscale(1);
