@@ -20,7 +20,7 @@
       <div class="container-fluid p-0">
         <!-- logo con enlace a página de inicio -->
         <a class="navbar-brand" href="./index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="lv-tooltip" data-bs-title="Inicio">
-          <img src="./assets/images/logo.png" alt="Logo" class="img-fluid">
+          <img src="./assets/images/logo.webp" alt="Logo" class="img-fluid" width="200px" height="38px">
         </a>
         <!-- fin logo con enlace a página de inicio -->
         <!-- botón para desplegar menú en offcanvas para pantallas menores a 992px -->
@@ -70,13 +70,13 @@
       <!-- video para mobile 9:16 -->
       <video class="lv-img-portrait" autoplay loop muted>
         <source src="./assets/videos/inicio/video-hero-mobile.mp4" type="video/mp4" class="d-none d-sm">
-        <img src="./assets/images/inicio/img-hero-mobile.webp" alt="Uno de nuestros profesionales atendiendo al perro Max, uno de nuestros clientes más antiguos.">
+        <img src="./assets/images/inicio/img-hero-mobile.webp" alt="Uno de nuestros profesionales atendiendo al perro Max, uno de nuestros clientes más antiguos." width="400px" height="711px" loading="lazy">
       </video>
       <!-- fin video para mobile 9:16 -->
       <!-- video para descktop 16:9 -->
       <video class="lv-img-landscape" autoplay loop muted>
         <source src="./assets/videos/inicio/video-hero-desktop.mp4" type="video/mp4" class="d-none d-sm">
-        <img src="./assets/images/inicio/img-hero-desktop.webp" alt="Rubi, el perro lazarillo, en su consulta de rutina en nuestra clínica.">
+        <img src="./assets/images/inicio/img-hero-desktop.webp" alt="Rubi, el perro lazarillo, en su consulta de rutina en nuestra clínica." width="711px" height="400px" loading="lazy">
       </video>
       <!-- fin video para descktop 16:9 -->
       <!-- títulos sobreimpresos -->
@@ -87,7 +87,7 @@
       <!-- fin títulos sobreimpresos -->
       <!-- pointer down -->
       <div class="video-viewport-pointer-down">
-        <a href="#servicios" class="d-flex rounded-circle p-3 border border-primary">
+        <a href="#servicios" class="d-flex rounded-circle p-3 border border-primary" aria-label="Bajar a la siguiente sección">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"></path>
             <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"></path>
@@ -103,7 +103,7 @@
         <article class="col">
           <div class="lv-card">
             <div class="rounded-5 overflow-hidden">
-              <img src="./assets/images/servicios/cirugia.webp" alt="Sala de cirugía" class="card-img-top card-img-zoom rounded-5">
+              <img src="./assets/images/servicios/cirugia.webp" alt="Sala de cirugía" class="card-img-top card-img-zoom rounded-5" width="800px" height="800px">
             </div>
             <div class="card-body">
               <h3 class="card-title">Cirugía veterinaria</h3>
@@ -117,7 +117,7 @@
         <article class="col">
           <div class="lv-card">
             <div class="rounded-5 overflow-hidden">
-              <img src="./assets/images/servicios/diagnostico.webp" alt="Veterinario realizando diagnóstico" class="card-img-top card-img-zoom rounded-5">
+              <img src="./assets/images/servicios/diagnostico.webp" alt="Veterinario realizando diagnóstico" class="card-img-top card-img-zoom rounded-5" width="800px" height="800px">
             </div>
             <div class="card-body">
               <h3 class="card-title">Diagnóstico veterinario</h3>
@@ -131,7 +131,7 @@
         <article class="col">
           <div class="lv-card">
             <div class="rounded-5 overflow-hidden">
-              <img src="./assets/images/servicios/laboratorio.webp" alt="Laboratorio veterinario" class="card-img-top card-img-zoom rounded-5">
+              <img src="./assets/images/servicios/laboratorio.webp" alt="Laboratorio veterinario" class="card-img-top card-img-zoom rounded-5" width="800px" height="800px">
             </div>
             <div class="card-body">
               <h3 class="card-title">Laboratorio veterinario</h3>
@@ -151,7 +151,7 @@
     </div>
     <!-- fin separador de secciones-->
     <!-- sección agenda -->
-    <section>
+    <section id="agenda">
       <form class="lv-agenda row g-5 bg-success m-0 px-3 px-lg-5 py-4" method="post">
         <fieldset class="col-12 col-md-6">
           <h2>Agenda tu visita</h2>
@@ -173,18 +173,18 @@
           </div>
         </fieldset>
         <fieldset class="col-12 col-md-6">
-          <ul class="nav nav-tabs" role="tablist">
+          <ul class="nav nav-tabs">
             <li class="nav-item" role="presentation">
               <input type="radio" class="btn-check" name="unit" id="agenda-cirugia" autocomplete="off" checked>
-              <label id="agenda-cirugia-calendar-tab" class="nav-link active" for="agenda-cirugia" data-bs-toggle="tab" data-bs-target="#agenda-cirugia-calendar" role="tab" aria-controls="agenda-cirugia-calendar" aria-selected="true">Cirugía</label>
+              <label id="agenda-cirugia-calendar-tab" class="nav-link active" for="agenda-cirugia" data-bs-toggle="tab" data-bs-target="#agenda-cirugia-calendar" aria-controls="agenda-cirugia-calendar" aria-selected="true">Cirugía</label>
             </li>
             <li class="nav-item" role="presentation">
               <input type="radio" class="btn-check" name="unit" id="agenda-diagnostico" autocomplete="off">
-              <label id="agenda-diagnostico-calendar-tab" class="nav-link" for="agenda-diagnostico" data-bs-toggle="tab" data-bs-target="#agenda-diagnostico-calendar" role="tab" aria-controls="agenda-diagnostico-calendar" aria-selected="false">Diagnóstico</label>
+              <label id="agenda-diagnostico-calendar-tab" class="nav-link" for="agenda-diagnostico" data-bs-toggle="tab" data-bs-target="#agenda-diagnostico-calendar" aria-controls="agenda-diagnostico-calendar" aria-selected="false">Diagnóstico</label>
             </li>
             <li class="nav-item" role="presentation">
               <input type="radio" class="btn-check" name="unit" id="agenda-laboratorio" autocomplete="off">
-              <label id="agenda-laboratorio-calendar-tab" class="nav-link" for="agenda-laboratorio" data-bs-toggle="tab" data-bs-target="#agenda-laboratorio-calendar" role="tab" aria-controls="agenda-laboratorio-calendar" aria-selected="false">Laboratorio</label>
+              <label id="agenda-laboratorio-calendar-tab" class="nav-link" for="agenda-laboratorio" data-bs-toggle="tab" data-bs-target="#agenda-laboratorio-calendar" aria-controls="agenda-laboratorio-calendar" aria-selected="false">Laboratorio</label>
             </li>
           </ul>
           <div class="tab-content">
@@ -408,8 +408,8 @@
         <article class="col">
           <div class="lv-card">
             <div class="position-relative">
-              <img src="./assets/images/productos/comida-perro.webp" alt="Comida para perros." class="card-img-top rounded-5">
-              <img src="./assets/images/productos/comida-perro-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+              <img src="./assets/images/productos/comida-perro.webp" alt="Comida para perros." class="card-img-top rounded-5" width="800px" height="800px">
+              <img src="./assets/images/productos/comida-perro-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5" width="800px" height="800px">
             </div>
             <div class="card-body">
               <h3 class="card-title">Comida para perros</h3>
@@ -423,8 +423,8 @@
         <article class="col">
           <div class="lv-card">
             <div class="position-relative">
-              <img src="./assets/images/productos/comida-gato.webp" alt="Comida para gatos." class="card-img-top rounded-5">
-              <img src="./assets/images/productos/comida-gato-2.webp" alt="Comida para gatos." class="card-img-2nd rounded-5">
+              <img src="./assets/images/productos/comida-gato.webp" alt="Comida para gatos." class="card-img-top rounded-5" width="800px" height="800px">
+              <img src="./assets/images/productos/comida-gato-2.webp" alt="Comida para gatos." class="card-img-2nd rounded-5" width="800px" height="800px">
               <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-warning">AGOTADO</span>
             </div>
             <div class="card-body">
@@ -439,8 +439,8 @@
         <article class="col">
           <div class="lv-card">
             <div class="position-relative">
-              <img src="./assets/images/productos/kit-pecera.webp" alt="Comida para perros." class="card-img-top rounded-5">
-              <img src="./assets/images/productos/kit-pecera-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+              <img src="./assets/images/productos/kit-pecera.webp" alt="Comida para perros." class="card-img-top rounded-5" width="800px" height="800px">
+              <img src="./assets/images/productos/kit-pecera-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5" width="800px" height="800px">
               <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-success">OFERTA</span>
             </div>
             <div class="card-body">
@@ -468,7 +468,7 @@
         <article id="review-1">
           <div class="lv-card lv-card-lifted align-items-center">
             <div class="position-relative w-75">
-              <img src="./assets/images/testimonios/ana.webp" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle">
+              <img src="./assets/images/testimonios/ana.webp" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle" width="270px" height="270px">
             </div>
             <div class="card-body text-center">
               <h3 class="card-title">Ana M.</h3>
@@ -479,7 +479,7 @@
         <article id="review-2">
           <div class="lv-card lv-card-lifted align-items-center">
             <div class="position-relative w-75">
-              <img src="./assets/images/testimonios/carlos.webp" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle">
+              <img src="./assets/images/testimonios/carlos.webp" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle" width="270px" height="270px">
             </div>
             <div class="card-body text-center">
               <h3 class="card-title">Carlos R.</h3>
@@ -490,7 +490,7 @@
         <article id="review-3">
           <div class="lv-card lv-card-lifted align-items-center">
             <div class="position-relative w-75">
-              <img src="./assets/images/testimonios/laura.webp" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle">
+              <img src="./assets/images/testimonios/laura.webp" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle" width="270px" height="270px">
             </div>
             <div class="card-body text-center">
               <h3 class="card-title">Laura T.</h3>
@@ -501,7 +501,7 @@
         <article id="review-4">
           <div class="lv-card lv-card-lifted align-items-center">
             <div class="position-relative w-75">
-              <img src="./assets/images/testimonios/javier.webp" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle">
+              <img src="./assets/images/testimonios/javier.webp" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle" width="270px" height="270px">
             </div>
             <div class="card-body text-center">
               <h3 class="card-title">Javier S.</h3>
