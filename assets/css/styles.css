@@ -12097,6 +12097,9 @@ footer nav a svg:hover {
 .lv-card .card-body .card-title {
   color: #003366;
 }
+.lv-card .card-body .text-success {
+  color: #2e8540 !important;
+}
 .lv-card .card-footer .card-link {
   padding-right: 1rem;
   font-family: "Roboto", sans-serif;
