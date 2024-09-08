@@ -4,11 +4,11 @@ Bienvenido al repositorio de la web de La Veterinaria. Este proyecto está dise�
 
 ## Tabla de Contenidos
 
-- Descripción
-- Tecnologías Utilizadas
-- Contribuciones
-- Licencia
-- Contacto
+- [Descripción](#descripción)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
+- [Contacto](#contacto)
 
 
 ## Descripción
